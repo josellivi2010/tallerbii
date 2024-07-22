@@ -1,0 +1,238 @@
+/*El siguiente codigo  es una buena práctica para empezar con un diseño limpio y predecible */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #1efada;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera1{
+    text-align: center;
+    color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00595b;
+    padding: 10px;
+
+}
+
+#cabecera1 img {
+    max-width: 2%;
+    height: auto;
+    display:block;
+}
+
+
+#n_parrafo1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    margin-left: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+/* Estilos para la cabecera 2 */
+#cabecera2 {
+    height: 100px;
+    background-color: #096a6c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#cabecera2 #imgc2{
+    width: 4%;
+}
+
+.part_sup{
+    display: flex;
+    align-items: center;
+}
+
+#n_sitio{
+    font-size: 1.5em;
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#men_superizq{
+    float: left;
+}
+#men_superder{
+    float: right;
+}
+
+#men_superder ul{
+    list-style:none;
+}
+
+#men_superder ul li{
+    display: inline-block;
+}
+
+#men_superder ul li a{
+    color: aliceblue; 
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;   
+    text-decoration:overline;
+    padding: 15px;
+}
+
+#men_superder ul li a:hover{
+    font-size: 2.3em;
+    color: beige;
+}
+
+
+
+/* Otras imagenes */
+#imgnot{
+    width: 20rem;
+}
+
+#img_tec{
+    max-width: 70%;
+    height: auto;
+    display: block;
+}
+
+
+/* Imagenes para kas cabeceras */
+#cabecera3 { background-image: url("img/Banner2.png"); }
+#cabecera31 { background-image: url("img/nosotros1.jpg"); }
+#cabecera32 { background-image: url("img/nosotros1.jpg"); }
+#cabecera33 { background-image: url("img/noticias0.jpg"); }
+#cabecera34 { background-image: url("img/encuentranos1.jpg"); }
+#cabecera35 { background-image: url("img/nosotros1.jpg"); }
+#cabecera36 { background-image: url("img/tw2_1.jpg"); }
+#cabecera37 { background-image: url("img/tw3_1.jpg"); }
+
+#cabecera3,  #cabecera31, #cabecera32, #cabecera33, #cabecera34, #cabecera35, #cabecera36, #cabecera37{
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    font-size: 3.3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 768px) {
+    #cabecera3,  #cabecera31, #cabecera32, #cabecera33, #cabecera34, #cabecera35, #cabecera36, #cabecera37{
+        height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+    
+@media (max-width: 480px) {
+    #cabecera3,  #cabecera31, #cabecera32, #cabecera33, #cabecera34, #cabecera35, #cabecera36, #cabecera37 {
+            height: 150px; /* Ajusta la altura para pantallas aún más pequeñas */
+    }
+}
+
+
+/* Estilos para los parrafos de la pagina principal */
+
+.izquierda, .derecha{
+width: 48%;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.izquierda{
+    float: left;
+}
+.derecha{
+    float: right;
+}
+
+/* Estilos para los titulos*/
+.izquierda h3, .izquierda h4, .derecha h3, .derecha h4{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    background-color: rgb(231, 229, 226);
+    padding: 10px;
+    }
+
+/* Estimlo para los titulo*/
+.izquierda p, .derecha p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    height: 70px;
+    color: white;
+    padding: 10px;
+    background-color: #137c7d;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    font-family: Arial, sans-serif; /* Define la fuente de la tabla */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para las celdas del encabezado */
+thead th {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 5px; /* Espaciado interno */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-bottom: 2px solid #ddd; /* Borde inferior gris claro */
+}
+
+/* Estilo para las celdas del cuerpo */
+tbody td {
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-bottom: 1px solid #ddd; /* Borde inferior gris claro */
+}
+
+/* Estilo para las filas alternas del cuerpo */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo gris claro para filas pares */
+}
+
+/* Estilo para la fila en la que el ratón está sobre ella */
+tbody tr:hover {
+    background-color: #332828;
+    color: white;
+}
+
+/* Opcional: estilo para el borde de la tabla */
+table, th, td {
+    border: 1px solid hwb(76 6% 9%); /* Borde gris claro para tabla y celdas */
+}
